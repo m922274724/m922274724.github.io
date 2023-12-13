@@ -192,7 +192,7 @@
     #twitter {
     position: absolute;
     top: 100%; /* 指定顶部位置 */
-    left: 20%; /* 指定左侧位置 */
+    left: 22%; /* 指定左侧位置 */
     z-index: 2;
     opacity: 0;
     animation: fadeIn 0.51s ease-in-out forwards;
@@ -201,7 +201,7 @@
     #facebook {
     position: absolute;
     top: 100%; /* 指定顶部位置 */
-    left: 60%; /* 指定左侧位置 */
+    left: 61%; /* 指定左侧位置 */
     z-index: 2;
     opacity: 0;
     animation: fadeIn 0.51s ease-in-out forwards;
@@ -210,22 +210,66 @@
     #twitter-text{
     position: absolute;
     color: aliceblue;
-    top: 100%; /* 指定顶部位置 */
-    left: 30%; /* 指定左侧位置 */
+    top: 111%; /* 指定顶部位置 */
+    left: 24%; /* 指定左侧位置 */
     z-index: 2;
     opacity: 0;
     animation: fadeIn 0.51s ease-in-out forwards;
+    font-size: large;
     }
 
     #facebook-text{
     position: absolute;
     color: aliceblue;
-    top: 100%; /* 指定顶部位置 */
-    left: 70%; /* 指定左侧位置 */
+    top: 111%; /* 指定顶部位置 */
+    left: 60%; /* 指定左侧位置 */
     z-index: 2;
     opacity: 0;
     animation: fadeIn 0.51s ease-in-out forwards;
+    font-size: large;
     }
+
+    #useful-tools {
+      top: 130%;
+      left: 23%;
+      width: 54%; /* 寬度百分比 */
+      height: 34%; /* 高度百分比 */
+      position: absolute;
+      z-index: 2; /* 確保內容在遮罩之上 */
+      transform: skew(0deg); /* 對容器進行傾斜以創建平行四邊形效果 */
+      opacity: 0; /* 初始时隐藏物体 */
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    #text7 {
+      font-size: 3.2vw;
+      padding: 10px;
+      background-color: rgb(93, 93, 93); /* 平行四邊形的背景色 */
+      color: white; /* 文字顏色 */
+      transform: none; /* 對文字進行傾斜以應對容器的傾斜 */
+      transform-origin: top left; /* 使變換基點保持在左上角，以解決文字消失的問題 */
+      opacity: 0; /* 初始时隐藏物体 */
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    #youtube-most {
+    position: absolute;
+    top: 145%; /* 指定顶部位置 */
+    left: 55%; /* 指定左侧位置 */
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    #twitter-most {
+    position: absolute;
+    top: 145%; /* 指定顶部位置 */
+    left: 10%; /* 指定左侧位置 */
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
 
 
 
@@ -337,6 +381,44 @@ left: calc(100% - 0%); /* 根據容器寬度調整值 */
 
   <div id="twitter-text">Twitter</div>
   <div id="facebook-text">Facebook</div>
+
+  <div id="useful-tools">
+    <div id="text7">小工具 Useful Tools シゲン</div>
+  </div>
+
+  <svg id="youtube-most" xmlns="http://www.w3.org/2000/svg" width="40%" height="40%" viewBox="0 0 200 60">
+    <!-- Red play button triangle -->
+    <polygon points="75,30 115,45 115,15" fill="#FF0000" />
+    
+    <!-- Play button background -->
+    <circle cx="75" cy="30" r="27" fill="#FFFFFF" />
+    
+    <!-- "Tube" text -->
+    <text x="130" y="40" font-family="Arial, sans-serif" font-size="30" fill="#FF0000">Tube</text>
+    <text x="10" y="40" font-family="Arial, sans-serif" font-size="30" fill="#FF0000">Most</text>
+  </svg>
+
+  <svg id="twitter-most" xmlns="http://www.w3.org/2000/svg" width="40%" height="40%" viewBox="0 0 150 150">
+    <!-- X Shape -->
+    <rect x="45" y="45" width="60" height="60" fill="#000" />
+    <line x1="55" y1="55" x2="95" y2="95" stroke="#fff" stroke-width="10" />
+    <line x1="55" y1="95" x2="95" y2="55" stroke="#fff" stroke-width="10" />
+
+    <!-- Twitter Logo -->
+    <text x="110" y="80" font-family="Arial, sans-serif" font-size="15" fill="white">Tweet</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="15" fill="white">Most</text>
+</svg>
+
+
+
+
+
+
+  
+  
+  
+  
+  
   
   
   
